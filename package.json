@@ -1,0 +1,59 @@
+{
+  "name": "run-navi-app",
+  "version": "1.0.0",
+  "description": "Electron app for navigation your speedrun.",
+  "main": "./out/main/main.js",
+  "scripts": {
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "prebuild": "electron-vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder",
+    "lint": "eslint"
+  },
+  "repository": "git+https://github.com/cma2819/run-navi-app.git",
+  "author": "Cma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cma2819/run-navi-app/issues"
+  },
+  "homepage": "https://github.com/cma2819/run-navi-app#readme",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.6.1",
+    "@stylistic/eslint-plugin-js": "^1.6.1",
+    "@stylistic/eslint-plugin-jsx": "^1.6.1",
+    "@stylistic/eslint-plugin-ts": "^1.6.1",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^28.2.2",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "*",
+    "vite": "^5.1.1"
+  },
+  "dependencies": {
+    "@electron-toolkit/utils": "^3.0.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.9",
+    "@mui/material": "^5.15.9",
+    "electron-log": "^5.1.1",
+    "livesplit-client": "^1.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "build": {
+    "appId": "com.electron.cmario.run-navi",
+    "productName": "Run Navi"
+  }
+}

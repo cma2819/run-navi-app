@@ -1,0 +1,1 @@
+export type MonitorPayload = { running: number, breaking: number, shouldBreak: number, threshold: number, isRunning: boolean};
